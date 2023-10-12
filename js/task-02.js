@@ -11,6 +11,6 @@ const unstyledList = document.querySelector("#ingredients");
 
 ingredients.forEach((ing) => {
   const li = document.createElement("li");
-  li.textContent = ing;
-  unstyledList.appendChild(li);
+  li.innerHTML = ing;
+  unstyledList.appendChild("beforbegin", li)
 });
